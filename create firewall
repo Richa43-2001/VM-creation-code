@@ -1,0 +1,1 @@
+gcloud compute --project=high-fuze-452410-m3 firewall-rules create allow-http-and-https --description="http and https" --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:22,tcp:443,tcp:80 --enable-logging
